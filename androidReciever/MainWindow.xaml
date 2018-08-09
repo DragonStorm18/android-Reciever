@@ -1,0 +1,25 @@
+﻿<Window x:Class="androidReciever.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:androidReciever"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="118*"/>
+            <ColumnDefinition Width="209*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="42*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="25.863,248,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click" Grid.Column="3"/>
+        <Label x:Name="label" Content="IP Address" HorizontalAlignment="Left" Margin="32.6,84,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txtIP" HorizontalAlignment="Left" Height="23" Margin="32.6,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="1" Text="192.168.1.3"/>
+        <Label x:Name="label_Copy" Content="Port" HorizontalAlignment="Left" Margin="73.2,83,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="23" Margin="73.2,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" Text="8880"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="25.863,272,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click" Grid.Column="3"/>
+
+    </Grid>
+</Window>
